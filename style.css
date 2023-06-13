@@ -1,0 +1,31 @@
+* {
+  /* Margin and Padding Resets */
+  margin: 0;
+  padding: 0;
+
+  /* Preference */
+  box-sizing: border-box;
+
+  /* Variables for easy use */
+  --grey: #888888;
+}
+
+/* Navbar settings */
+.navbar {
+  height: 10vh;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--grey);
+}
+
+.navbar img {
+  max-height: 100%;
+}
+
+.navbar li {
+  color: white;
+  list-style: none;
+  display: inline-block;
+}
