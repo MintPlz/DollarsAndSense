@@ -1,21 +1,25 @@
-//Get sections and buttons
+/* Sections and Navbar Buttons */
 const sections = document.querySelectorAll("section");
 const btns = document.querySelectorAll(".navbar a");
 
-//testing
-function test() {
+/* Give each button a click event listener */
+btns.forEach(btn => {
+  btn.addEventListener("click", function() {
+    moveTo(this)
+  })
+});
 
-  console.log("testing");
+/* Smooth scroll to section on click */
+function moveTo(btn) {
 
-  console.log(sections)
+  /* Get the button's target section by finding its href */
+  var hash = btn.hash;
 
-  sections.forEach(section => {
-    console.log(section.id)
-  });
+  /* If the button is home, go to top of page instead */
+  var target = ((hash == '#homeSection') ? 0 : $(hash).offset().top);
 
-  console.log(btns)
-
-  btns.forEach(btn => {
-    console.log(btn.textContent)
-  });
+  /* Scroll to target */
+  $('html').animate({
+    scrollTop: target
+  }, 800);
 }
