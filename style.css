@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   /* Margin and Padding Resets */
@@ -15,13 +15,15 @@
 
 html, body {
   /* Default Font */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
 /* Organization Classes */
-col-50 {
-  flex: 1;
+.col-50 {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
 }
 
 /* Navbar settings */
@@ -100,13 +102,20 @@ section {
 /* About Section */
 #aboutSection {
   display: flex;
-  column-gap: 50px;
+  column-gap: 5%;
+
+  padding: 5%;
 
   background-color: var(--soft_grey);
+}
+
+#aboutSection div h1 {
+  font-weight: 900;
 }
 
 #aboutSection img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
