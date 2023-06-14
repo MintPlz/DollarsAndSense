@@ -51,8 +51,26 @@ html, body {
   color: white;
   list-style: none;
   display: inline-block;
-  padding: 5px;
+  padding: 0px 10px;
   font-size: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+
+  cursor: pointer;
+
+  /* Hover Animation Setup */
+  background: linear-gradient(white, white) center bottom;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+}
+
+.navbar a:hover, .active {
+  font-weight: bold;
+
+  background-size: 100% 2px !important;
 }
 
 /* Sections */
