@@ -10,6 +10,7 @@
 
   /* Variables for easy use */
   --grey: #333;
+  --soft_grey: #eee;
 }
 
 html, body {
@@ -18,13 +19,25 @@ html, body {
   font-weight: 400;
 }
 
+/* Organization Classes */
+col-50 {
+  flex: 1;
+}
+
 /* Navbar settings */
 .navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+
   height: 10vh;
+
   padding: 5px 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: var(--grey);
 }
 
@@ -82,4 +95,18 @@ section {
   font-weight: 700;
 
   word-wrap: break-word;
+}
+
+/* About Section */
+#aboutSection {
+  display: flex;
+  column-gap: 50px;
+
+  background-color: var(--soft_grey);
+}
+
+#aboutSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
