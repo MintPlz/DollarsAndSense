@@ -50,6 +50,7 @@ html, body {
 #homeSection {
   position: relative;
   overflow: clip;
+  color: white;
 }
 
 #homeSection img {
@@ -63,14 +64,22 @@ html, body {
   height: 100%;
 
   display: flex;
-  justify-content: center;
   align-items: center;
 
   /* Overlay Gradient */
-  background: linear-gradient(90deg, #000000ff, #ffffff00);
+  background: linear-gradient(90deg, #000000ff, #ffffff44);
 }
 
 #homeSection .overlay div {
-  width: 80%;
-  color: white;
+  position: relative;
+  left: 10%;
+
+  width: 50%;
+}
+
+#homeSection .overlay h1 {
+  font-size: 80px;
+  font-weight: 700;
+
+  word-wrap: break-word;
 }
