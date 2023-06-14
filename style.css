@@ -104,13 +104,24 @@ section {
   display: flex;
   column-gap: 5%;
 
-  padding: 5%;
+  padding: 10%;
 
   background-color: var(--soft_grey);
 }
 
 #aboutSection div h1 {
-  font-weight: 900;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#aboutSection div hr {
+  border: 5px solid var(--grey);
+}
+
+#aboutSection div p {
+  font-size: 20px;
+
+  padding-top: 5%;
 }
 
 #aboutSection img {
