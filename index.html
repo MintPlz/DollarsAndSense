@@ -7,19 +7,20 @@
     <title>Dollars and Sense Financial Fitness</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scrollManager.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="scrollManager.js" defer></script>
   </head>
 
   <body>
     <!-- Navigation bar. Jumps to sections on the page -->
     <header class="navbar">
-      <img src="assets/logo.png">
+      <img src="assets/logo.png" onclick="test()">
       <ul>
-        <li><a class="homeSection active">Home</a></li>
-        <li><a class="aboutSection">About</a></li>
-        <li><a class="servicesSection">Services</a></li>
-        <li><a class="testimonialsSection">Testimonials</a></li>
-        <li><a class="contactSection">Contact</a></li>
+        <li><a class="active" href="#homeSection">Home</a></li>
+        <li><a href="#aboutSection">About</a></li>
+        <li><a>Services</a></li>
+        <li><a>Testimonials</a></li>
+        <li><a>Contact</a></li>
       </ul>
     </header>
 
