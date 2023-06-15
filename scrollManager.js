@@ -2,7 +2,9 @@
 const sections = document.querySelectorAll("section");
 const btns = document.querySelectorAll(".navbar a");
 
-/* Give each button a click event listener */
+/* --- Smooth Scroll Implementation --- */
+
+/* Navlinks Click Listener */
 btns.forEach(btn => {
   btn.addEventListener("click", function() {
     moveTo(this)
@@ -22,4 +24,34 @@ function moveTo(btn) {
   $('html').animate({
     scrollTop: target
   }, 800);
+}
+
+/* --- Highlight Navigation Button on Scroll Implementation --- */
+
+/* Scroll Event Listener */
+window.addEventListener('scroll', () => {
+  changeActiveNav();
+});
+
+/* Make a Navlink 'active' when viewing section */
+function changeActiveNav() {
+  sections.forEach(section => {
+
+    /* Top and Height of Section */
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    /* Section is active if 2/3 is visible */
+    if(scrollY >= sectionTop - sectionHeight / 3) {
+      currentSection = section.getAttribute("id");
+    }
+
+  });
+
+  btns.forEach(btn => {
+    btn.classList.remove("active");
+    if(btn.hash == "#" + currentSection) {
+      btn.classList.add("active");
+    }
+  });
 }
