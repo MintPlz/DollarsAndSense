@@ -25,9 +25,19 @@ h1 {
   font-weight: 700;
 }
 
+p {
+  font-size: 20px;
+}
+
 /* Organization Classes */
 .flex {
   display: flex;
+}
+
+.row {
+  flex-direction: row;
+
+  column-gap: 5%;
 }
 
 .col {
@@ -130,8 +140,6 @@ section {
 
 /* About Section */
 #aboutSection {
-  column-gap: 5%;
-
   padding: 10%;
 
   background-color: var(--soft_grey);
@@ -142,8 +150,6 @@ section {
 }
 
 #aboutSection div p {
-  font-size: 20px;
-
   padding-top: 5%;
 }
 
@@ -157,8 +163,32 @@ section {
 /* Services Section */
 #serviceSection {
   text-align: center;
+
+  padding: 5% 10%;
 }
 
 #serviceSection hr {
   border: 5px solid var(--grey);
+}
+
+#serviceSection .row {
+  height: 100%;
+}
+
+#serviceSection .col {
+  align-items: center;
+  justify-content: center;
+
+  flex: 30%;
+
+  row-gap: 5%;
+}
+
+#serviceSection img {
+  height: 200px;
+  width: 200px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
 }
