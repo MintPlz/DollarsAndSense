@@ -50,8 +50,12 @@ function changeActiveNav() {
 
   btns.forEach(btn => {
     btn.classList.remove("active");
-    if(btn.hash == "#" + currentSection) {
+
+    var currHash = "#" + currentSection;
+
+    if(btn.hash == currHash) {
       btn.classList.add("active");
+      window.location.hash = currHash;
     }
   });
 }
