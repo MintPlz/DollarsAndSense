@@ -26,8 +26,15 @@ h1 {
 }
 
 /* Organization Classes */
-.col-50 {
+.flex {
   display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col-50 {
   flex-direction: column;
   flex: 50%;
 }
@@ -42,7 +49,6 @@ h1 {
 
   padding: 5px 20px;
 
-  display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -124,7 +130,6 @@ section {
 
 /* About Section */
 #aboutSection {
-  display: flex;
   column-gap: 5%;
 
   padding: 10%;
@@ -152,4 +157,12 @@ section {
 /* Services Section */
 #serviceSection {
   text-align: center;
+}
+
+#serviceSection hr {
+  border: 5px solid var(--grey);
+}
+
+#serviceSection div {
+  display: flex;
 }
