@@ -55,7 +55,6 @@ function changeActiveNav() {
 
     if(btn.hash == currHash) {
       btn.classList.add("active");
-      window.location.hash = currHash;
     }
   });
 }

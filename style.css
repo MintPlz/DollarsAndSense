@@ -162,7 +162,3 @@ section {
 #serviceSection hr {
   border: 5px solid var(--grey);
 }
-
-#serviceSection div {
-  display: flex;
-}
