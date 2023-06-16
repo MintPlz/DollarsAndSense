@@ -13,14 +13,19 @@
   --soft_grey: #eee;
 }
 
+/* Defaults */
 html, body {
   /* Default Font */
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
 
-/* Organization Classes */
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
 
+/* Organization Classes */
 .col-50 {
   display: flex;
   flex-direction: column;
@@ -114,9 +119,6 @@ section {
 }
 
 #homeSection .overlay h1 {
-  font-size: 80px;
-  font-weight: 700;
-
   word-wrap: break-word;
 }
 
@@ -128,11 +130,6 @@ section {
   padding: 10%;
 
   background-color: var(--soft_grey);
-}
-
-#aboutSection div h1 {
-  font-size: 80px;
-  font-weight: bold;
 }
 
 #aboutSection div hr {
@@ -153,3 +150,6 @@ section {
 }
 
 /* Services Section */
+#serviceSection {
+  text-align: center;
+}
