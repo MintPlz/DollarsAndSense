@@ -17,8 +17,9 @@ function moveTo(btn) {
   /* Get the button's target section by finding its href */
   var hash = btn.hash;
 
-  /* If the button is home, go to top of page instead */
-  var target = ((hash == '#homeSection') ? 0 : $(hash).offset().top);
+  /* Target the hash and give room for the navbar */
+  var target = $(hash).offset().top - window.innerHeight/10;
+
 
   /* Scroll to target */
   $('html').animate({
