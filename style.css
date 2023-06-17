@@ -25,6 +25,10 @@ h1 {
   font-weight: 700;
 }
 
+hr {
+  border: 5px solid var(--grey);
+}
+
 p {
   font-size: 1.25em;
 }
@@ -144,10 +148,6 @@ section {
   background-color: var(--soft_grey);
 }
 
-#aboutSection div hr {
-  border: 5px solid var(--grey);
-}
-
 #aboutSection div p {
   padding-top: 5%;
 }
@@ -164,10 +164,6 @@ section {
   text-align: center;
 
   padding: 5% 10%;
-}
-
-#serviceSection hr {
-  border: 5px solid var(--grey);
 }
 
 #serviceSection .row {
@@ -191,4 +187,13 @@ section {
   border-radius: 50%;
 
   object-fit: cover;
+}
+
+/* Testimonial Section */
+#testimonialSection {
+  background-color: var(--soft_grey);
+
+  text-align: center;
+
+  padding: 5% 10%;
 }
