@@ -9,8 +9,9 @@
   box-sizing: border-box;
 
   /* Variables for easy use */
-  --grey: #333;
-  --soft_grey: #eee;
+  --dark-grey: #333;
+  --grey: #888;
+  --soft-grey: #eee;
 }
 
 /* Defaults */
@@ -26,7 +27,7 @@ h1 {
 }
 
 hr {
-  border: 5px solid var(--grey);
+  border: 5px solid var(--dark-grey);
 }
 
 p {
@@ -66,7 +67,7 @@ p {
   justify-content: space-between;
   align-items: center;
 
-  background: var(--grey);
+  background: var(--dark-grey);
 }
 
 .navbar img {
@@ -145,7 +146,7 @@ section {
 #aboutSection {
   padding: 10%;
 
-  background-color: var(--soft_grey);
+  background-color: var(--soft-grey);
 }
 
 #aboutSection div p {
@@ -191,7 +192,7 @@ section {
 
 /* Testimonial Section */
 #testimonialSection {
-  background-color: var(--soft_grey);
+  background-color: var(--soft-grey);
 
   text-align: center;
 
@@ -199,6 +200,61 @@ section {
 }
 
 /* Testimonial Slideshow */
+.slideshow {
+  position: relative;
+
+  padding: 5% 10%;
+
+  flex: 1;
+}
+
 .slide {
-  display: none;
+  /* Display is decided in slideshowManager.js 21 and 25 */
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5%;
+
+  text-align: left;
+
+  height: 100%;
+}
+
+.slide, .slideshow a {
+  font-size: 2em;
+}
+
+.slide hr {
+  width: 10%;
+}
+
+.slide p {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.rating {
+  color: gold;
+}
+
+.prevSlide, .nextSlide {
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+}
+
+.prevSlide {
+  left: 0;
+}
+
+.nextSlide {
+  right: 0;
+}
+
+.dot {
+  color: var(--grey);
+}
+
+.dot:hover, .currSlide {
+  color: var(--dark-grey);
 }

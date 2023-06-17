@@ -79,23 +79,48 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonialSection">
+    <section id="testimonialSection" class="flex col">
       <h1>Testimonials</h1>
       <hr>
-      <div id="slideshow">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <a class="prevSlide">
+      <div class="slideshow">
+        <div class="slide">
+          <div class="rating">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <q>This is an example quote. The next quote will be lorem ipsum.</q>
+          <hr>
+          <p>Nikki Watt</p>
+        </div>
+        <div class="slide">
+          <div class="rating">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis molestie tortor nec pellentesque. Nam imperdiet sodales dolor vel finibus.</q>
+          <hr>
+          <p>Roman Philosopher Cicero</p>
+        </div>
+        <a class="prevSlide" onclick="plusSlides(-1)">
           <span class="fa fa-solid fa-chevron-up fa-rotate-270"></span>
         </a>
-        <a class="nextSlide">
+        <a class="nextSlide" onclick="plusSlides(1)">
           <span class="fa fa-solid fa-chevron-up fa-rotate-90"></span>
         </a>
       </div>
       <div class="dotContainer">
-        <a class="dot"></a>
-        <a class="dot"></a>
-        <a class="dot"></a>
+        <a class="dot" onclick="showSlides(0)">
+          <span class="fa fa-solid fa-circle"></span>
+        </a>
+        <a class="dot" onclick="showSlides(1)">
+          <span class="fa fa-solid fa-circle"></span>
+        </a>
       </div>
     </section>
   </body>
