@@ -23,7 +23,7 @@ html, body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 700;
 }
 
@@ -136,11 +136,7 @@ section {
   position: relative;
   left: 10%;
 
-  width: 50%;
-}
-
-#homeSection .overlay h1 {
-  word-wrap: break-word;
+  width: 90%;
 }
 
 /* About Section */
