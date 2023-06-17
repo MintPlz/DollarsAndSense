@@ -11,6 +11,7 @@
   /* Variables for easy use */
   --dark-grey: #333;
   --grey: #888;
+  --light-grey: #bbb;
   --soft-grey: #eee;
 }
 
@@ -211,8 +212,7 @@ section {
 .slide {
   /* Display is decided in slideshowManager.js 21 and 25 */
   flex-direction: column;
-  justify-content: center;
-  row-gap: 5%;
+  justify-content: space-evenly;
 
   text-align: left;
 
@@ -223,10 +223,6 @@ section {
   font-size: 2em;
 }
 
-.slide hr {
-  width: 10%;
-}
-
 .slide p {
   font-weight: bold;
   font-size: 1em;
@@ -234,6 +230,7 @@ section {
 
 .rating {
   color: gold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .prevSlide, .nextSlide {
