@@ -197,3 +197,8 @@ section {
 
   padding: 5% 10%;
 }
+
+/* Testimonial Slideshow */
+.slide {
+  display: none;
+}
