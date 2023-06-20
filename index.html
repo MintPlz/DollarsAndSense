@@ -114,10 +114,10 @@
       </div>
       <div class="dotContainer">
         <a class="dot" onclick="showSlides(0)">
-          <span class="fa fa-solid fa-circle"></span>
+          <span class="fa fa-circle"></span>
         </a>
         <a class="dot" onclick="showSlides(1)">
-          <span class="fa fa-solid fa-circle"></span>
+          <span class="fa fa-circle"></span>
         </a>
       </div>
     </section>
@@ -127,15 +127,21 @@
       <hr>
       <div id="contactContainer" class="flex row flex-grow">
         <div class="flex col-50">
-          <h4>Bowling Green, Kentucky, United States</h4>
+          <h3>Bowling Green, Kentucky, United States</h3>
+          <p><span class="fa fa-phone"></span> +1 (415) 555-0132</p>
+          <p><span class="fa fa-envelope"></span> Gordonbuckman@icloud.com</p>
+          <p><span class="fa fa-clock-o"></span> 9:00 am - 5:00 pm M-F</p>
+          <p>In-person or online</p>
+          <a>Schedule Today</a>
         </div>
         <form class="flex col-50">
-          <div>
-            <div>
-              <input id="name" type="text" name="name" placeholder="Name">
-              <input id="phone" type="tel" name="phone" placeholder="Phone">
-            </div>
+          <div class="flex row">
+            <input id="name" class="col-50" type="text" name="name" placeholder="Name" required>
+            <input id="phone" class="col-50" type="tel" name="phone" placeholder="Phone" required>
           </div>
+          <input id="email" type="email" name="email" placeholder="Email address" required>
+          <input id="message" type="text" name="message" placeholder="Message" required>
+          <input type="submit" value="Contact Us">
         </form>
       </div>
     </section>
