@@ -40,6 +40,10 @@ p {
   display: flex;
 }
 
+.flex-grow {
+  flex: 1;
+}
+
 .row {
   flex-direction: row;
 
@@ -165,16 +169,11 @@ section {
 }
 
 /* Services Section */
-#serviceSection .row {
-  flex: 1;
-
-  padding-top: 5%;
-}
-
 #serviceSection .row .col {
   flex: 30%;
 
   align-items: center;
+  justify-content: center;
 
   row-gap: 1em;
 }
@@ -198,8 +197,6 @@ section {
   position: relative;
 
   padding: 5% 10%;
-
-  flex: 1;
 }
 
 .slide {

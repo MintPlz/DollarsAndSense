@@ -59,7 +59,7 @@
     <section id="serviceSection" class="flex col col-sec">
       <h1>Services</h1>
       <hr>
-      <div class="flex row">
+      <div class="flex row flex-grow">
         <div class="flex col">
           <img src="assets/credit.jpg">
           <h2>Debt Elimination</h2>
@@ -82,7 +82,7 @@
     <section id="testimonialSection" class="flex col col-sec">
       <h1>Testimonials</h1>
       <hr>
-      <div class="slideshow">
+      <div class="slideshow flex-grow">
         <div class="slide">
           <div class="rating">
             <span class="fa fa-star"></span>
@@ -125,6 +125,19 @@
     <section id="contactSection" class="flex col col-sec">
       <h1>Contact</h1>
       <hr>
+      <div id="contactContainer" class="flex row flex-grow">
+        <div class="flex col-50">
+          <h4>Bowling Green, Kentucky, United States</h4>
+        </div>
+        <form class="flex col-50">
+          <div>
+            <div>
+              <input id="name" type="text" name="name" placeholder="Name">
+              <input id="phone" type="tel" name="phone" placeholder="Phone">
+            </div>
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 
