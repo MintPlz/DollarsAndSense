@@ -1,15 +1,21 @@
-/* Sections and Navbar Buttons */
-const sections = document.querySelectorAll("section");
-const btns = document.querySelectorAll(".navbar a");
+var sections;
+var btns;
+
+document.addEventListener("DOMContentLoaded", () => {
+  /* Sections and Navbar Buttons */
+  sections = document.querySelectorAll("section");
+  btns = document.querySelectorAll(".navbar a");
+
+  /* Navlinks Click Listener */
+  btns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      moveTo(this)
+    })
+  });
+});
+
 
 /* --- Smooth Scroll Implementation --- */
-
-/* Navlinks Click Listener */
-btns.forEach(btn => {
-  btn.addEventListener("click", function() {
-    moveTo(this)
-  })
-});
 
 /* Smooth scroll to section on click */
 function moveTo(btn) {

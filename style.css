@@ -247,3 +247,28 @@ section {
 }
 
 /* Contact Section */
+#contactContainer .col-50 {
+  justify-content: center;
+}
+
+#contactContainer input {
+  border: 1px solid var(--dark-grey);
+  border-radius: 5px;
+
+  padding: 2%;
+}
+
+#contactContainer a, #contactContainer input[type="submit"] {
+  background-color: var(--dark-grey);
+  color: white;
+
+  border: none;
+
+  padding: 2%;
+
+  font-size: 1.25em;
+}
+
+#contactContainer a:hover, #contactContainer input[type="submit"]:hover {
+  background-color: var(--grey);
+}

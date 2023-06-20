@@ -7,9 +7,13 @@
     <title>Dollars and Sense Financial Fitness</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="scrollManager.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+    <script src="scrollManager.js"></script>
     <script src="slideshowManager.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {$('#phone').inputmask({"mask":"(999) 999-9999"})});
+    </script>
   </head>
 
   <body>
@@ -127,14 +131,15 @@
       <hr>
       <div id="contactContainer" class="flex row flex-grow">
         <div class="flex col-50">
-          <h3>Bowling Green, Kentucky, United States</h3>
+          <h3><span class="fa fa-map-marker"></span> Bowling Green, Kentucky, United States</h3>
           <p><span class="fa fa-phone"></span> +1 (415) 555-0132</p>
           <p><span class="fa fa-envelope"></span> Gordonbuckman@icloud.com</p>
-          <p><span class="fa fa-clock-o"></span> 9:00 am - 5:00 pm M-F</p>
-          <p>In-person or online</p>
+          <p><span class="fa fa-calendar"></span> Monday - Friday</p>
+          <p><span class="fa fa-clock-o"></span> 9:00 am - 5:00 pm</p>
+          <p><span class="fa fa-user"></span> In-person or online</p>
           <a>Schedule Today</a>
         </div>
-        <form class="flex col-50">
+        <form class="flex col-50" action="">
           <div class="flex row">
             <input id="name" class="col-50" type="text" name="name" placeholder="Name" required>
             <input id="phone" class="col-50" type="tel" name="phone" placeholder="Phone" required>

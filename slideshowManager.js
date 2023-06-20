@@ -1,8 +1,8 @@
 var slideIndex = 0;
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   showSlides(0);
-}
+});
 
 function plusSlides(n) {
   showSlides(slideIndex + n);
