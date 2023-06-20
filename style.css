@@ -55,6 +55,13 @@ p {
   flex: 50%;
 }
 
+.col-sec {
+  /* Section Column Layout */
+  text-align: center;
+
+  padding: 5% 10%;
+}
+
 /* Navbar settings */
 .navbar {
   position: sticky;
@@ -158,12 +165,6 @@ section {
 }
 
 /* Services Section */
-#serviceSection {
-  text-align: center;
-
-  padding: 5% 10%;
-}
-
 #serviceSection .row {
   flex: 1;
 
@@ -190,10 +191,6 @@ section {
 /* Testimonial Section */
 #testimonialSection {
   background-color: var(--soft-grey);
-
-  text-align: center;
-
-  padding: 5% 10%;
 }
 
 /* Testimonial Slideshow */
@@ -251,3 +248,5 @@ section {
 .dot:hover, .currSlide {
   color: var(--dark-grey);
 }
+
+/* Contact Section */
