@@ -249,13 +249,23 @@ section {
 /* Contact Section */
 #contactContainer .col-50 {
   justify-content: center;
+
+  row-gap: 1em;
 }
 
-#contactContainer input {
+#contactContainer input, #contactContainer textarea {
   border: 1px solid var(--dark-grey);
   border-radius: 5px;
 
   padding: 2%;
+
+  font: inherit;
+}
+
+#contactContainer textarea {
+  resize: none;
+
+  flex: 0 0 20%;
 }
 
 #contactContainer a, #contactContainer input[type="submit"] {
@@ -263,6 +273,7 @@ section {
   color: white;
 
   border: none;
+  border-radius: 0px;
 
   padding: 2%;
 

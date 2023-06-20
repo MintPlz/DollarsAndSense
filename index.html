@@ -12,7 +12,8 @@
     <script src="scrollManager.js"></script>
     <script src="slideshowManager.js"></script>
     <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", () => {$('#phone').inputmask({"mask":"(999) 999-9999"})});
+      /* Input mask for form phone number */
+      document.addEventListener("DOMContentLoaded", () => {$('#phone').inputmask({"mask":"(999) 999-9999"});});
     </script>
   </head>
 
@@ -139,13 +140,13 @@
           <p><span class="fa fa-user"></span> In-person or online</p>
           <a>Schedule Today</a>
         </div>
-        <form class="flex col-50" action="">
+        <form class="flex col-50">
           <div class="flex row">
             <input id="name" class="col-50" type="text" name="name" placeholder="Name" required>
             <input id="phone" class="col-50" type="tel" name="phone" placeholder="Phone" required>
           </div>
           <input id="email" type="email" name="email" placeholder="Email address" required>
-          <input id="message" type="text" name="message" placeholder="Message" required>
+          <textarea id="message" type="text" name="message" placeholder="Message" required></textarea>
           <input type="submit" value="Contact Us">
         </form>
       </div>
