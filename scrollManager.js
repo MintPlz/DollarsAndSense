@@ -5,9 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Sections and Navbar Buttons */
   sections = document.querySelectorAll("section");
   btns = document.querySelectorAll(".navbar a");
+  footerBtns = document.querySelectorAll("footer a");
 
   /* Navlinks Click Listener */
   btns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      moveTo(this)
+    })
+  });
+
+  footerBtns.forEach(btn => {
     btn.addEventListener("click", function() {
       moveTo(this)
     })
