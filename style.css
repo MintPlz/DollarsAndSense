@@ -86,11 +86,14 @@ p {
   max-height: 100%;
 }
 
+.navbar ul {
+  display: flex;
+  column-gap: 20px;
+}
+
 .navbar li {
   color: white;
   list-style: none;
-  display: inline-block;
-  padding: 0px 10px;
   font-size: 1.25em;
 }
 
@@ -282,4 +285,20 @@ section {
 
 #contactContainer a:hover, #contactContainer input[type="submit"]:hover {
   background-color: var(--grey);
+}
+
+/* Footer Bar */
+footer {
+  background-color: var(--dark-grey);
+  color: white;
+
+  padding: 2% 15%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer li {
+  display: inline-block;
+  list-style: none;
 }
