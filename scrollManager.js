@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
       moveTo(this)
     })
   });
+
+  /* Set active nav button at start */
+  changeActiveNav();
 });
 
 
